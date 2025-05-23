@@ -15,7 +15,13 @@ A simple Todo List API built with .NET 9 that supports CRUD operations using an 
 
 ## Features
 
-[Previous features list remains same...]
+- Full CRUD (Create, Read, Update, Delete) operations
+- In-memory database (data persists only while application is running)
+- Swagger/OpenAPI documentation
+- CORS enabled
+- RESTful endpoints
+- JSON requests/responses
+
 
 ## Getting Started
 
