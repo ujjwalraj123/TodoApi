@@ -5,7 +5,7 @@ using TodoApi.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
+
 builder.Services.AddDbContext<TodoDbContext>(opt => 
     opt.UseInMemoryDatabase("TodoList"));
 
@@ -20,7 +20,7 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Configure HTTPS redirection
+
 // builder.Services.Configure<HttpsRedirectionOptions>(options =>
 // {
 //     options.HttpsPort = 5000;
@@ -34,7 +34,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP pipeline
+
 app.UseSwagger();
 app.UseSwaggerUI();
 
